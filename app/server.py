@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1IzfZR5FwnCnwtbQluLVrQ5cfa11fSGZC'
-export_file_name = 'export.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1eahXvJ5LmHDvfLVVfPDNqLoavnNOkvIh'
+export_file_name = 'exportMoviePosterGenreClassifier.pkl'
 
-classes = ['donald_trump', 'boris_johnson']
+classes = ['Action','Adventure','Animation','Biography','Comedy','Crime','Documentary','Drama','Family','Fantasy','History','Horror','Music','Musical','Mystery','N/A','News','Reality-TV','Romance','Sci-Fi','Short','Sport','Thriller','War','Western']
 path = Path(__file__).parent
 
 app = Starlette()
